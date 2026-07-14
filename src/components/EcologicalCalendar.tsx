@@ -25,7 +25,7 @@ export default function EcologicalCalendar() {
             An Ecological Year
           </div>
           <h2 style={{ fontFamily: SERIF, fontSize: 'clamp(32px,4.6vw,58px)', lineHeight: 1, letterSpacing: '-.01em', maxWidth: '18ch' }}>
-            Content that follows the planet's calendar
+            Content that follows the planet&rsquo;s calendar
           </h2>
         </div>
 
