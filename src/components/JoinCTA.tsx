@@ -2,7 +2,6 @@ import { GOOGLE_FORM_URL } from '@/lib/config'
 import { getMemberCount } from '@/lib/members'
 import JoinFormButton from './JoinFormButton'
 import MemberCount from './MemberCount'
-import JoinCTAButtons from './JoinCTAButtons'
 
 const MONO  = "var(--font-mono-rw), monospace"
 const SERIF = "var(--font-instrument-serif), Georgia, serif"
@@ -46,9 +45,7 @@ export default async function JoinCTA() {
           or simply learn to read the living world a little more closely.
         </p>
 
-        <JoinCTAButtons />
-
-        <div data-reveal data-delay=".32s" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 30, marginTop: 54, paddingTop: 46, borderTop: '1px solid rgba(243,239,228,.14)' }}>
+        <div data-reveal data-delay=".24s" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 30, marginTop: 54, paddingTop: 46, borderTop: '1px solid rgba(243,239,228,.14)' }}>
           <JoinFormButton href={GOOGLE_FORM_URL} />
           <MemberCount count={memberCount} />
         </div>

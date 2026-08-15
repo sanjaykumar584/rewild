@@ -30,7 +30,7 @@ export default function PodcastSection() {
         <div data-reveal style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(280px,1fr))', gap: 40, alignItems: 'end', marginBottom: 54 }}>
           <div>
             <div style={{ fontFamily: MONO, fontSize: 11.5, letterSpacing: '.28em', textTransform: 'uppercase', color: '#E2C57C', marginBottom: 22 }}>
-              D / 04 — Podcasts &amp; Digital Storytelling
+              D / 04 — Podcasts &amp; Digital Storytelling · [Upcoming]
             </div>
             <h2 style={{ fontFamily: SERIF, fontSize: 'clamp(36px,5.5vw,72px)', lineHeight: .98, letterSpacing: '-.01em' }}>
               The most intimate<br />medium we have
@@ -78,16 +78,16 @@ function PodcastCard({ code, title, desc, delay }: { code: string; title: string
     <div
       data-reveal
       data-delay={delay}
-      style={{ background: '#13392B', padding: '32px 28px', cursor: 'pointer', transition: 'background .5s' }}
-      onMouseEnter={e => (e.currentTarget.style.background = '#164332')}
-      onMouseLeave={e => (e.currentTarget.style.background = '#13392B')}
+      style={{ background: '#13392B', padding: '32px 28px', transition: 'background .5s' }}
     >
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 38 }}>
         <span style={{ fontFamily: MONO, fontSize: 11, letterSpacing: '.16em', color: '#E2C57C' }}>{code}</span>
         <span style={{
-          width: 34, height: 34, border: '1px solid rgba(243,239,228,.3)', borderRadius: '50%',
-          display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 11,
-        }}>▶</span>
+          fontFamily: MONO, fontSize: 10, letterSpacing: '.1em', color: 'rgba(243,239,228,.4)',
+          border: '1px solid rgba(243,239,228,.14)', borderRadius: 20, padding: '4px 10px',
+        }}>
+          SOON
+        </span>
       </div>
       <h3 style={{ fontFamily: SERIF, fontSize: 26, lineHeight: 1.05, marginBottom: 10 }}>{title}</h3>
       <p style={{ fontSize: 14.5, lineHeight: 1.55, color: 'rgba(243,239,228,.66)' }}>{desc}</p>

@@ -22,7 +22,7 @@ export default function EcologicalCalendar() {
       <div style={{ maxWidth: 1240, margin: '0 auto' }}>
         <div data-reveal style={{ marginBottom: 48 }}>
           <div style={{ fontFamily: MONO, fontSize: 11.5, letterSpacing: '.26em', textTransform: 'uppercase', color: '#A8542F', marginBottom: 18 }}>
-            An Ecological Year
+            An Ecological Year · [Upcoming Themes]
           </div>
           <h2 style={{ fontFamily: SERIF, fontSize: 'clamp(32px,4.6vw,58px)', lineHeight: 1, letterSpacing: '-.01em', maxWidth: '18ch' }}>
             Content that follows the planet&rsquo;s calendar

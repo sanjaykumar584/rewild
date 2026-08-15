@@ -4,7 +4,7 @@
 // src/components/JoinFormButton.tsx).
 
 /** TODO: paste the Google Form's public share URL here. */
-export const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSc-cpAbf3sePDdRoZZlnWzitqGTbY1qGY96RDftnyAbjQ9AvA/viewform?usp=sharing&ouid=105408452164425816873'
+export const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSeT3M0VLZHSw1LuG0qq9pxZoPGBcTjrQD6eAvTvlqTNv5xvBA/viewform'
 
 /**
  * TODO: paste the CSV URL from the Form's response Sheet:
