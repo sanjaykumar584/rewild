@@ -16,6 +16,14 @@ function TagChips({ tags }: { tags: string[] }) {
 }
 
 function CtaLink({ href, label }: { href: string; label: string }) {
+  const isUpcoming = label.toLowerCase().includes('soon') || label.toLowerCase().includes('upcoming')
+  if (isUpcoming) {
+    return (
+      <span style={{ display: 'inline-flex', alignItems: 'center', gap: 10, marginTop: 30, fontFamily: MONO, fontSize: 11, letterSpacing: '.14em', textTransform: 'uppercase', color: 'rgba(243,239,228,.4)', border: '1px solid rgba(243,239,228,.2)', borderRadius: 30, padding: '6px 14px' }}>
+        {label}
+      </span>
+    )
+  }
   return (
     <a href={href} style={{ display: 'inline-flex', alignItems: 'center', gap: 10, marginTop: 30, fontFamily: MONO, fontSize: 12, letterSpacing: '.14em', textTransform: 'uppercase', color: '#C29A3F', borderBottom: '1px solid rgba(194,154,63,.4)', paddingBottom: 5 }}>
       {label}
@@ -114,7 +122,7 @@ export default function FourPillars() {
         code="A / 01" type="Web Platform"
         title={<>Ecological Library<br />&amp; Digital Hub</>}
         body="The movement's central nervous system. Articles, essays, and curated reading on biodiversity, climate, and indigenous ecology — for the curious layperson, the researcher, the activist, and the schoolteacher alike."
-        tags={TAGS_LIBRARY} cta="Browse the library →" href="#"
+        tags={TAGS_LIBRARY} cta="Library Coming Soon" href="#"
         imgClass="rw-img-library" imgLabel="Fig. 01 — Repository"
       />
 
@@ -123,7 +131,7 @@ export default function FourPillars() {
         code="B / 02" type="Publications"
         title={<>Call for Papers<br />&amp; Journal</>}
         body="A biannual interdisciplinary journal with open peer review and transparency logs. Research papers, creative nonfiction, poems, photo essays, and field notes — open-access, DOAJ-listed."
-        tags={TAGS_JOURNAL} cta="Read the call →" href="#journal"
+        tags={TAGS_JOURNAL} cta="Journal Coming Soon" href="#"
         imgClass="rw-img-journal" imgLabel="Fig. 02 — Peer Review"
         reverse
       />
@@ -134,7 +142,7 @@ export default function FourPillars() {
           code="C / 03" type="Public Events"
           title={<>Seminars<br />&amp; Public Events</>}
           body="Free, recorded, archived. Monthly public webinars with ecologists, writers, and indigenous scholars; quarterly skills workshops; and the flagship annual REWILD Summit."
-          tags={TAGS_SEMINARS} cta="See the calendar →" href="#"
+          tags={TAGS_SEMINARS} cta="Seminars Coming Soon" href="#"
           imgClass="rw-img-seminars" imgLabel="Fig. 03 — Convergence"
         />
       </section>

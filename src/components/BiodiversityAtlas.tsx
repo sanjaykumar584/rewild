@@ -77,7 +77,7 @@ export default function BiodiversityAtlas() {
       <div style={{ maxWidth: 1240, margin: '0 auto', position: 'relative', zIndex: 2 }}>
         <div data-reveal style={{ maxWidth: 560 }}>
           <div style={{ fontFamily: MONO, fontSize: 11.5, letterSpacing: '.28em', textTransform: 'uppercase', color: '#C29A3F', marginBottom: 24 }}>
-            Interactive Cartography
+            Interactive Cartography · [Upcoming]
           </div>
           <h2 style={{ fontFamily: SERIF, fontSize: 'clamp(36px,5.5vw,68px)', lineHeight: 1, letterSpacing: '-.01em', marginBottom: 22 }}>
             The Biodiversity<br />Atlas
@@ -105,19 +105,16 @@ export default function BiodiversityAtlas() {
             ))}
           </div>
 
-          <a
-            href="#"
+          <span
             style={{
               display: 'inline-flex', alignItems: 'center', gap: 10, marginTop: 38,
-              fontFamily: MONO, fontSize: 12, letterSpacing: '.14em', textTransform: 'uppercase',
-              color: '#0E1410', background: '#E2C57C', padding: '14px 24px', borderRadius: 40,
-              transition: 'transform .4s',
+              fontFamily: MONO, fontSize: 11, letterSpacing: '.14em', textTransform: 'uppercase',
+              color: 'rgba(243,239,228,.5)', border: '1px solid rgba(243,239,228,.2)',
+              padding: '12px 22px', borderRadius: 40,
             }}
-            onMouseEnter={e => (e.currentTarget.style.transform = 'translateY(-2px)')}
-            onMouseLeave={e => (e.currentTarget.style.transform = 'none')}
           >
-            Explore the atlas →
-          </a>
+            Atlas Coming Soon
+          </span>
         </div>
       </div>
 

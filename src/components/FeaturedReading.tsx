@@ -42,15 +42,15 @@ export default function FeaturedReading() {
         >
           <div>
             <div style={{ fontFamily: MONO, fontSize: 11.5, letterSpacing: '.26em', textTransform: 'uppercase', color: '#A8542F', marginBottom: 18 }}>
-              From the Library
+              From the Library · [Upcoming]
             </div>
             <h2 style={{ fontFamily: SERIF, fontSize: 'clamp(32px,4.6vw,58px)', lineHeight: 1, letterSpacing: '-.01em' }}>
               Where ecology<br />becomes a story
             </h2>
           </div>
-          <a href="#" style={{ fontFamily: MONO, fontSize: 12, letterSpacing: '.14em', textTransform: 'uppercase', color: '#1B231C', borderBottom: '1px solid rgba(27,35,28,.4)', paddingBottom: 5 }}>
-            All essays →
-          </a>
+          <span style={{ fontFamily: MONO, fontSize: 11, letterSpacing: '.14em', textTransform: 'uppercase', color: 'rgba(27,35,28,.5)', border: '1px solid rgba(27,35,28,.2)', borderRadius: 30, padding: '6px 14px' }}>
+            Library Coming Soon
+          </span>
         </div>
 
         {/* 3-col article grid */}
@@ -63,7 +63,6 @@ export default function FeaturedReading() {
               key={a.title}
               data-reveal
               data-delay={a.delay}
-              style={{ cursor: 'pointer' }}
             >
               <div style={{ position: 'relative', overflow: 'hidden', borderRadius: 4, marginBottom: 20 }}>
                 <div
@@ -72,7 +71,7 @@ export default function FeaturedReading() {
                 />
               </div>
               <div style={{ fontFamily: MONO, fontSize: 10.5, letterSpacing: '.2em', textTransform: 'uppercase', color: '#A8542F', marginBottom: 12 }}>
-                {a.tag}
+                {a.tag} · Upcoming
               </div>
               <h3 style={{ fontFamily: SERIF, fontSize: 26, lineHeight: 1.1, marginBottom: 10 }}>{a.title}</h3>
               <p style={{ fontSize: 15, lineHeight: 1.58, color: '#525C4F' }}>{a.body}</p>

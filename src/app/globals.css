@@ -74,13 +74,50 @@ a { color: inherit; text-decoration: none; }
   animation: rwFloat 7s ease-in-out infinite 1s;
 }
 
-/* Pillar image placeholder gradients */
-.rw-img-library  { background: radial-gradient(140% 110% at 60% 20%, #2c4a36, #0E1410); }
-.rw-img-journal  { background: radial-gradient(140% 110% at 30% 80%, #1e3328, #0a1a10); }
-.rw-img-seminars { background: radial-gradient(140% 110% at 70% 30%, #264034, #0E1410); }
-.rw-img-article  { background: radial-gradient(120% 100% at 70% 20%, #2c4a36, #16261b); }
-.rw-img-hero     { background: linear-gradient(160deg, #1a3020 0%, #0E1410 60%, #0a1a10 100%); }
-.rw-img-atlas    { background: radial-gradient(100% 100% at 50% 50%, #1a2e1e, #0A0F0B); }
+/* Hero & Atlas background images */
+.rw-img-hero {
+  background-image: url('/images/hero-banner.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.rw-img-atlas {
+  background-image: url('/images/atlas-map.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Featured reading article images */
+.rw-img-article {
+  background-image: url('/images/featured-article.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Pillar images */
+.rw-img-library {
+  background-image: url('/images/library-pillar.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.rw-img-journal {
+  background-image: url('/images/journal-pillar.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.rw-img-seminars {
+  background-image: url('/images/seminars-pillar.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 /* Responsive grids (mirror REWILD.dc.html breakpoints) */
 #principles-grid { grid-template-columns: repeat(3, 1fr); }
