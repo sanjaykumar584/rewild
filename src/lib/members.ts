@@ -36,7 +36,7 @@ export async function getMemberCount(): Promise<number | null> {
       .split(/\r?\n/)
       .filter((line) => line.replace(/,/g, '').trim().length > 0) // drop blank/padding rows
 
-    const count = rows.length - 1 // minus header row
+    const count = rows.length - 2 // minus header row
     return Number.isFinite(count) && count > 0 ? count : 0
   } catch {
     return null
