@@ -11,7 +11,7 @@ export const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSeT3M0V
  * File → Share → Publish to web → select the responses sheet → CSV → Publish.
  * It looks like: https://docs.google.com/spreadsheets/d/e/<id>/pub?output=csv
  */
-export const GOOGLE_SHEET_CSV_URL = 'https://docs.google.com/spreadsheets/d/1O2-8Pq-cAgS1MQlLmp2HwvZw_DFtY9VgUX3kFFjv-D0/edit?usp=sharing'
+export const GOOGLE_SHEET_CSV_URL = 'https://docs.google.com/spreadsheets/d/1TxPfvmfbt_V9ws4KjmIAL3UXX-uyE_xCqoAeswcYvEw/edit'
 
 /** How often (seconds) to re-fetch the sheet for the member count. */
 export const MEMBER_COUNT_REVALIDATE_SECONDS = 900 // 15 min
